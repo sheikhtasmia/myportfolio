@@ -10,12 +10,12 @@ export default function PartnerBrands() {
     },
     {
       name: "Peithology",
-      logo: "/assets/peitho.jpg",
+      logo: "/assets/pethio.jpg",
       desc: "Creative apparel brand with a bold modern identity.",
     },
     {
       name: "Barakah Organic Food",
-      logo: "/assets/barakah logo and cover(2).jpg",
+      logo: "/assets/barakah logo and cover (2).jpg",
       desc: "Organic and healthy food brand empowering local farmers.",
     },
     {
