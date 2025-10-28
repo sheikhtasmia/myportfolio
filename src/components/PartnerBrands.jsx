@@ -6,7 +6,7 @@ export default function WorkingWith() {
     { name: 'Wastedd', logo: 'https://via.placeholder.com/140x60?text=Brand+A' },
     { name: 'Peithology', logo: 'https://via.placeholder.com/140x60?text=Brand+B' },
     { name: 'Barakah organic food', logo: 'https://via.placeholder.com/140x60?text=Brand+C' },
-    { name: 'Chitromul', logo: 'public/assets/chitromul11.png' }
+    { name: 'Chitromul', logo: '/assets/chitromul11.png' }
   ]
 
   return (
