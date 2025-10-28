@@ -3,9 +3,9 @@ import { motion } from 'framer-motion'
 
 export default function Brands() {
   const brands = [
-    { name: 'STechNova', desc: 'Digital agency', url: '#' },
-    { name: 'Kinun.com', desc: 'Store', url: '#' },
-    { name: 'Boidhara', desc: 'Bookshop & Publisher', url: '#' }
+    { name: 'STechNova', desc: 'Digital agency', url: 'https://www.facebook.com/stechnova0' },
+    { name: 'Kinun dot com', desc: 'Store', url: 'https://www.facebook.com/kinundotcom' },
+    { name: 'Boidhara', desc: 'Bookshop & Publisher', url: 'https://www.facebook.com/BoiDhara' }
   ]
 
   return (
