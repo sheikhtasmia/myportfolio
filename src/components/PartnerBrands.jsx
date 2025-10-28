@@ -6,23 +6,23 @@ export default function PartnerBrands() {
     {
       name: "Wastedd",
       logo: "/assets/wastedd.jpg",
-      desc: "A sustainable fashion brand promoting eco-conscious design."
+      desc: "A B2B organaisation.",
     },
     {
       name: "Peithology",
       logo: "/assets/peitho.jpg",
-      desc: "Creative apparel brand with a bold modern identity."
+      desc: "Creative apparel brand with a bold modern identity.",
     },
     {
       name: "Barakah Organic Food",
       logo: "/assets/barakah logo and cover(2).jpg",
-      desc: "Organic and healthy food brand empowering local farmers."
+      desc: "Organic and healthy food brand empowering local farmers.",
     },
     {
       name: "Chitromul",
       logo: "/assets/chitromul11.png",
-      desc: "Creative community for artists and visual storytellers."
-    }
+      desc: "Photography Agency.",
+    },
   ];
 
   return (
@@ -52,9 +52,11 @@ export default function PartnerBrands() {
                 className="h-20 w-auto object-contain rounded-md"
               />
             </div>
+
             <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200 text-center">
               {b.name}
             </h3>
+
             <p className="text-sm text-gray-500 dark:text-gray-400 text-center mt-2">
               {b.desc}
             </p>
@@ -63,8 +65,4 @@ export default function PartnerBrands() {
       </div>
     </motion.section>
   );
-}
-
-    </motion.section>
-  )
 }
