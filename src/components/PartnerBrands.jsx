@@ -1,12 +1,12 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 
-export default function PartnerBrands() {
+export default function WorkingWith() {
   const logos = [
-    { name: 'BrandA', logo: 'https://via.placeholder.com/140x60?text=Brand+A' },
-    { name: 'BrandB', logo: 'https://via.placeholder.com/140x60?text=Brand+B' },
-    { name: 'BrandC', logo: 'https://via.placeholder.com/140x60?text=Brand+C' },
-    { name: 'BrandD', logo: 'https://via.placeholder.com/140x60?text=Brand+D' }
+    { name: 'Wastedd', logo: 'https://via.placeholder.com/140x60?text=Brand+A' },
+    { name: 'Peithology', logo: 'https://via.placeholder.com/140x60?text=Brand+B' },
+    { name: 'Barakah organic food', logo: 'https://via.placeholder.com/140x60?text=Brand+C' },
+    { name: 'Chitromul', logo: 'https://via.placeholder.com/140x60?text=Brand+D' }
   ]
 
   return (
