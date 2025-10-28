@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 
 export default function AboutPreview() {
   const experience = [
-    { company: "Wastedd", role: "HR & Data Analytics", year: "2021–Present" },
-    { company: "Barakah", role: "Social Media Manager", year: "2022–Present" },
+    { company: "Wastedd", role: "HR & Data Analytics", year: "2024–Present" },
+    { company: "Barakah", role: "Social Media Manager", year: "2025–Present" },
     { company: "Freelancer", role: "Local Projects", year: "2021–Present" },
   ];
 
@@ -18,9 +18,9 @@ export default function AboutPreview() {
   ];
 
   const brands = [
-    { name: "STechNova", logo: "/assets/stechnova.png", desc: "Digital Agency" },
-    { name: "Kinun dot com", logo: "/assets/kinun.png", desc: "E-Commerce Store" },
-    { name: "Boidhara", logo: "/assets/boidhara.png", desc: "Bookshop & Publisher" },
+    { name: "STechNova", logo: "/assets/stechnova logo.png", desc: "Digital Agency" },
+    { name: "Kinun dot com", logo: "/assets/kinun logo.png", desc: "E-Commerce Store" },
+    { name: "Boidhara", logo: "/assets/boidhara.jpg", desc: "Bookshop & Publisher" },
   ];
 
   return (
@@ -42,7 +42,7 @@ export default function AboutPreview() {
       <div className="mb-12">
         <h3 className="text-2xl font-semibold mb-4">Education</h3>
         <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md text-center">
-          <p className="font-semibold">BBA</p>
+          <p className="font-semibold">Bachelor of Business Administration</p>
           <p>World University of Bangladesh</p>
         </div>
       </div>
@@ -103,7 +103,7 @@ export default function AboutPreview() {
         <div className="grid sm:grid-cols-3 gap-6">
           {/* Example placeholders */}
           <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md hover:shadow-lg text-center">
-            <p className="font-semibold">Certificate 1</p>
+            <p className="font-semibold"> Digital marketing Certificate 1</p>
             <p className="text-gray-400">2023</p>
           </div>
           <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md hover:shadow-lg text-center">
