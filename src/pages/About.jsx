@@ -12,12 +12,12 @@ export default function AboutPage() {
   ]
 
   const skills = [
-    { name: "Social Media Marketing", icon: "/assets/icons/social.png" },
-    { name: "Copywriting", icon: "/assets/icons/copywriting.png" },
-    { name: "Web Development", icon: "/assets/icons/web.png" },
-    { name: "MS Word", icon: "/assets/icons/word.png" },
-    { name: "PowerPoint", icon: "/assets/icons/ppt.png" },
-    { name: "Excel", icon: "/assets/icons/excel.png" }
+    { name: "Social Media Marketing", icon: "/assets/Social Media Marketing.webp" },
+    { name: "Copywriting", icon: "/assets/Copywriting.png" },
+    { name: "Web Development", icon: "/assets/Web Development.jpg" },
+    { name: "MS Word", icon: "/assets/MS Word.svg" },
+    { name: "PowerPoint", icon: "/assets/PowerPoint.svg" },
+    { name: "Excel", icon: "/assets/Excel.svg" }
   ]
 
   const brands = [
@@ -27,9 +27,10 @@ export default function AboutPage() {
   ]
 
   const certificates = [
-    { title: "Digital Marketing Certificate 1", year: "2023", img: "/assets/cert1.png" },
-    { title: "Award 1", year: "2022", img: "/assets/award1.png" },
-    { title: "Certificate 2", year: "2021", img: "/assets/cert2.png" }
+    { title: "Digital Marketing Certificate ", year: "2023", img: "/assets/cert1.jepg" },
+    { title: "Public Speaking", year: "2022", img: "/assets/cert3.jpg" },
+    { title: "Data analytics", year: "2021", img: "/assets/cert2.jpg" }
+    { title: "From YSDI trust", year: "2021", img: "/assets/certificarte from ysdi.png" }
   ]
 
   return (
@@ -47,7 +48,7 @@ export default function AboutPage() {
             A digital marketer who delivers the right message to the right people at the right time.
           </p>
           <p className="text-gray-700">
-            BBA student at World University of Bangladesh, with experience in sales, content creation, affiliate marketing, and social media management.
+            Bachelor of Business Administration student at World University of Bangladesh, with experience in sales, content creation, affiliate marketing, and social media management.
           </p>
         </div>
         <div className="md:w-1/2 flex justify-center">
