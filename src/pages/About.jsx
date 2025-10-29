@@ -17,20 +17,20 @@ export default function AboutPage() {
     { name: "Web Development", icon: "/assets/Web Development.jpg" },
     { name: "MS Word", icon: "/assets/MS Word.svg" },
     { name: "PowerPoint", icon: "/assets/PowerPoint.svg" },
-    { name: "Excel", icon: "/assets/Excel.svg" }
+    { name: "Excel", icon: "/assets/Excel.svg" },
   ]
 
   const brands = [
     { name: "STechNova", logo: "/assets/stechnova logo.png", desc: "Digital Agency", founder: true },
     { name: "Kinun dot com", logo: "/assets/kinun logo.png", desc: "E-Commerce Store", founder: true },
-    { name: "Boidhara", logo: "/assets/boidhara.jpg", desc: "Bookshop & Publisher", founder: true }
+    { name: "Boidhara", logo: "/assets/boidhara.jpg", desc: "Bookshop & Publisher", founder: true },
   ]
 
   const certificates = [
     { title: "Digital Marketing Certificate ", year: "2023", img: "/assets/cert1.jepg" },
     { title: "Public Speaking", year: "2022", img: "/assets/cert3.jpg" },
-    { title: "Data analytics", year: "2021", img: "/assets/cert2.jpg" }
-    { title: "From YSDI trust", year: "2021", img: "/assets/certificarte from ysdi.png" }
+    { title: "Data analytics", year: "2021", img: "/assets/cert2.jpg" },
+    { title: "From YSDI trust", year: "2021", img: "/assets/certificarte from ysdi.png" },
   ]
 
   return (
