@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const slides = [
   {
-    img: "/assets/slide1.jpg",
+    img: "/assets/slide1.webp",
     role: "Digital Marketer",
     about: "Crafting data-driven marketing strategies that grow brands and reach audiences.",
   },
@@ -19,7 +19,7 @@ const slides = [
     about: "Writing insightful articles and copy that resonates with readers.",
   },
   {
-    img: "/assets/slide4.jpg",
+    img: "/assets/slide4.webp",
     role: "Entrepreneur",
     about: "Building brands, leading teams, and driving innovative projects.",
   },
@@ -100,7 +100,7 @@ export default function Hero() {
                       to="/contact"
                       className="px-6 py-3 bg-white/90 hover:bg-white rounded-md shadow text-gray-900 font-medium transition"
                     >
-                      Contact Me
+                      Get in touch
                     </Link>
                   </div>
                 </div>
