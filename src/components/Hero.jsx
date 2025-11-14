@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const slides = [
   {
-    img: "/assets/slide1.jpg",
+    img: "/assets/slide1.webp",
     role: "Digital Marketer",
     about: "Crafting data-driven marketing strategies that grow brands and reach audiences.",
   },
