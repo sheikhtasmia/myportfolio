@@ -53,9 +53,10 @@ export default function About() {
           <h3 className="text-xl font-semibold mb-4">Certificates</h3>
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { img: "/cert1.webp", title: "Google Digital Marketing" },
-              { img: "/cert2.webp", title: "Meta Social Media Marketing" },
-              { img: "/cert3.webp", title: "HubSpot Content Strategy" }
+              { img: "/assets/cert1.jpeg", title: "Digital Marketing" },
+              { img: "/assets/cert2.jpg", title: "Introduction to data analytics" },
+              { img: "/assets/cert3.jpg", title: "Public Speaking" },
+              { img: "/assets/certificarte from ysdi.png", title: "From YSDI" },
             ].map((cert, idx) => (
               <div key={idx} className="bg-white dark:bg-gray-800 p-3 rounded-xl shadow-lg">
                 <img
