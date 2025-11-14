@@ -1,24 +1,68 @@
-import React from 'react'
-import { motion } from 'framer-motion'
+import React from "react";
+import { motion } from "framer-motion";
 
-export default function WorkingWith() {
-  const logos = [
-    { name: 'Wastedd', logo: 'https://via.placeholder.com/140x60?text=Brand+A' },
-    { name: 'Peithology', logo: 'https://via.placeholder.com/140x60?text=Brand+B' },
-    { name: 'Barakah organic food', logo: 'https://via.placeholder.com/140x60?text=Brand+C' },
-    { name: 'Chitromul', logo: '/assets/chitromul11.png' }
-  ]
+export default function PartnerBrands() {
+  const brands = [
+    {
+      name: "Wastedd",
+      logo: "/assets/wastedd.jpg",
+      desc: "A sustainable fashion brand promoting eco-conscious design.",
+    },
+    {
+      name: "Peithology",
+      logo: "/assets/peithology.png",
+      desc: "Creative apparel brand with a bold modern identity.",
+    },
+    {
+      name: "Barakah Organic Food",
+      logo: "/assets/barakah.png",
+      desc: "Organic and healthy food brand empowering local farmers.",
+    },
+    {
+      name: "Chitromul",
+      logo: "/assets/chitromul11.png",
+      desc: "Creative community for artists and visual storytellers.",
+    },
+  ];
 
   return (
-    <motion.section className="max-w-6xl mx-auto px-4 py-12" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}>
-      <h3 className="text-2xl font-semibold mb-6">Working with</h3>
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 items-center">
-        {logos.map((l, i) => (
-          <div key={i} className="flex items-center justify-center bg-white rounded-md p-3 shadow-sm">
-            <img src={l.logo} alt={l.name} className="max-h-12 object-contain" />
-          </div>
+    <motion.section
+      id="partner-brands"
+      className="max-w-7xl mx-auto px-6 py-16 bg-gray-50 dark:bg-gray-900"
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+    >
+      <h2 className="text-3xl font-bold text-center mb-12 text-gray-800 dark:text-gray-100">
+        Brands I’m Working With
+      </h2>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+        {brands.map((b, i) => (
+          <motion.div
+            key={i}
+            className="flex flex-col items-center justify-center bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300"
+            whileHover={{ scale: 1.05 }}
+          >
+            <div className="w-full flex justify-center mb-4">
+              <img
+                src={b.logo}
+                alt={b.name}
+                className="h-20 w-auto object-contain rounded-md"
+              />
+            </div>
+
+            <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200 text-center">
+              {b.name}
+            </h3>
+
+            <p className="text-sm text-gray-500 dark:text-gray-400 text-center mt-2">
+              {b.desc}
+            </p>
+          </motion.div>
         ))}
       </div>
     </motion.section>
-  )
+  );
 }
