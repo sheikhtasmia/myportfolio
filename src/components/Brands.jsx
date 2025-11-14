@@ -7,7 +7,7 @@ export default function Brands() {
     {
       name: "STechNova",
       desc: "Digital agency specializing in growth & marketing solutions.",
-      logo: "/assets/stechnova.png",
+      logo: "/assets/stechnova logo.png",
       social: {
         fb: "https://www.facebook.com/stechnova0",
         ig: "https://www.instagram.com/stechnova0",
@@ -17,7 +17,7 @@ export default function Brands() {
     {
       name: "Kinun dot com",
       desc: "E-commerce store delivering quality products.",
-      logo: "/assets/kinun.png",
+      logo: "/assets/kinun logo.png",
       social: {
         fb: "https://www.facebook.com/kinundotcom",
         ig: "https://www.instagram.com/kinundotcom",
@@ -27,11 +27,21 @@ export default function Brands() {
     {
       name: "Boidhara",
       desc: "Bookshop & Publisher promoting literature and knowledge.",
-      logo: "/assets/boidhara.png",
+      logo: "/assets/boidhara.jpg",
       social: {
         fb: "https://www.facebook.com/BoiDhara",
         ig: "https://www.instagram.com/boidhara",
         linkedin: "https://www.linkedin.com/company/boidhara",
+      },
+    },
+     {
+      name: "Gadget Mistri",
+      desc: "Your One Stop Gadget Store",
+      logo: "/assets/gadgetmistri.png",
+      social: {
+        fb: "https://www.facebook.com/gadgetmistrri",
+        ig: "#",
+        linkedin: "#",
       },
     },
   ];
