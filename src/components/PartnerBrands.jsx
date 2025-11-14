@@ -10,18 +10,28 @@ export default function PartnerBrands() {
     },
     {
       name: "Peithology",
-      logo: "/assets/peithology.png",
+      logo: "/assets/pethio.jpg",
       desc: "Creative apparel brand with a bold modern identity.",
     },
     {
       name: "Barakah Organic Food",
-      logo: "/assets/barakah.png",
+      logo: "/assets/barakah.jpg",
       desc: "Organic and healthy food brand empowering local farmers.",
     },
     {
       name: "Chitromul",
       logo: "/assets/chitromul11.png",
       desc: "Creative community for artists and visual storytellers.",
+    },
+    {
+      name: "The daily Intizer",
+      logo: "/assets/chitromul11.png",
+      desc: "News Paper",
+    },
+    {
+      name: "Export House",
+      logo: "/assets/chitromul11.png",
+      desc: "Export and Import company",
     },
   ];
 
