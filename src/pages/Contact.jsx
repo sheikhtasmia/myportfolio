@@ -1,58 +1,81 @@
-import React from 'react'
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaMediumM, FaRedditAlien, FaPinterestP } from 'react-icons/fa'
+import React from 'react';
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaMediumM, FaRedditAlien, FaPinterestP } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
 export default function Contact() {
-  const endpoint = import.meta.env.VITE_FORMSPREE_ENDPOINT || ''
+  const endpoint = import.meta.env.VITE_FORMSPREE_ENDPOINT || '';
 
   return (
-    <div className="pt-16">
-      <div className="max-w-3xl mx-auto px-4 py-12">
-        <h1 className="text-3xl font-bold mb-4">Contact</h1>
-        <p className="text-gray-700 mb-6">Book an appointment or send a message. I usually reply within 48 hours.</p>
+    <motion.section
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      className="pt-16 pb-24 bg-gray-50 dark:bg-gray-900"
+    >
+      <div className="max-w-3xl mx-auto px-4">
+        <h1 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">Contact Me</h1>
+        <p className="text-gray-700 dark:text-gray-300 mb-8">
+          Book an appointment or send a message. I usually reply within 48 hours.
+        </p>
 
-        <form action={endpoint} method="POST" className="bg-white shadow-md rounded-lg p-6">
-          <label className="block mb-3">
-            <span className="text-sm font-medium">Name</span>
-            <input type="text" name="name" required className="mt-1 block w-full rounded border-gray-200 shadow-sm p-2" />
-          </label>
+        {/* Appointment / Contact Form */}
+        <motion.form
+          action={endpoint}
+          method="POST"
+          className="bg-white dark:bg-gray-800 shadow-lg rounded-xl p-8 mb-12 space-y-4"
+          whileHover={{ scale: 1.01 }}
+          transition={{ duration: 0.3 }}
+        >
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <label className="block">
+              <span className="text-sm font-medium text-gray-700 dark:text-gray-300">Name</span>
+              <input type="text" name="name" required className="mt-1 block w-full rounded border border-gray-200 dark:border-gray-700 shadow-sm p-2 dark:bg-gray-900 dark:text-white" />
+            </label>
 
-          <label className="block mb-3">
-            <span className="text-sm font-medium">Email</span>
-            <input type="email" name="email" required className="mt-1 block w-full rounded border-gray-200 shadow-sm p-2" />
-          </label>
-
-          <label className="block mb-3">
-            <span className="text-sm font-medium">Message</span>
-            <textarea name="message" rows="5" required className="mt-1 block w-full rounded border-gray-200 shadow-sm p-2"></textarea>
-          </label>
-
-          <div className="flex items-center justify-between mt-4">
-            <button type="submit" className="px-4 py-2 bg-primary text-white rounded-md">Send Message</button>
-            <small className="text-gray-500">Or book via email after sending a message.</small>
+            <label className="block">
+              <span className="text-sm font-medium text-gray-700 dark:text-gray-300">Email</span>
+              <input type="email" name="email" required className="mt-1 block w-full rounded border border-gray-200 dark:border-gray-700 shadow-sm p-2 dark:bg-gray-900 dark:text-white" />
+            </label>
           </div>
-        </form>
 
-        <div className="mt-8">
-          <h4 className="font-semibold mb-3">Social</h4>
-          <div className="flex gap-3">
-            <a className="p-2 rounded bg-white shadow" href="#" aria-label="Facebook"><FaFacebookF /></a>
-            <a className="p-2 rounded bg-white shadow" href="#" aria-label="Instagram"><FaInstagram /></a>
-            <a className="p-2 rounded bg-white shadow" href="#" aria-label="LinkedIn"><FaLinkedinIn /></a>
-            <a className="p-2 rounded bg-white shadow" href="#" aria-label="Medium"><FaMediumM /></a>
-            <a className="p-2 rounded bg-white shadow" href="#" aria-label="Reddit"><FaRedditAlien /></a>
-            <a className="p-2 rounded bg-white shadow" href="#" aria-label="Pinterest"><FaPinterestP /></a>
+          <label className="block">
+            <span className="text-sm font-medium text-gray-700 dark:text-gray-300">Message</span>
+            <textarea name="message" rows="5" required className="mt-1 block w-full rounded border border-gray-200 dark:border-gray-700 shadow-sm p-2 dark:bg-gray-900 dark:text-white"></textarea>
+          </label>
+
+          <label className="block">
+            <span className="text-sm font-medium text-gray-700 dark:text-gray-300">Preferred Date & Time</span>
+            <input type="datetime-local" name="appointment" className="mt-1 block w-full rounded border border-gray-200 dark:border-gray-700 shadow-sm p-2 dark:bg-gray-900 dark:text-white" />
+          </label>
+
+          <button type="submit" className="mt-4 px-6 py-3 bg-teal-600 hover:bg-teal-700 text-white rounded-lg font-semibold shadow-md hover:shadow-lg transition-all duration-300">
+            Book Appointment
+          </button>
+        </motion.form>
+
+        {/* Social Media */}
+        <div className="mb-12">
+          <h2 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">Follow Me</h2>
+          <div className="flex flex-wrap gap-3">
+            <a href="#" className="p-3 bg-white dark:bg-gray-800 shadow rounded-full hover:scale-110 transition transform"><FaFacebookF /></a>
+            <a href="#" className="p-3 bg-white dark:bg-gray-800 shadow rounded-full hover:scale-110 transition transform"><FaInstagram /></a>
+            <a href="#" className="p-3 bg-white dark:bg-gray-800 shadow rounded-full hover:scale-110 transition transform"><FaLinkedinIn /></a>
+            <a href="#" className="p-3 bg-white dark:bg-gray-800 shadow rounded-full hover:scale-110 transition transform"><FaMediumM /></a>
+            <a href="#" className="p-3 bg-white dark:bg-gray-800 shadow rounded-full hover:scale-110 transition transform"><FaRedditAlien /></a>
+            <a href="#" className="p-3 bg-white dark:bg-gray-800 shadow rounded-full hover:scale-110 transition transform"><FaPinterestP /></a>
           </div>
         </div>
 
-        <div className="mt-8">
-          <h4 className="font-semibold mb-3">Company Pages</h4>
-          <div className="flex gap-3">
-            <a className="p-2 rounded bg-white shadow" href="#" aria-label="STechNova">STechNova</a>
-            <a className="p-2 rounded bg-white shadow" href="#" aria-label="Kinun">Kinun.com</a>
-            <a className="p-2 rounded bg-white shadow" href="#" aria-label="Boidhara">Boidhara</a>
+        {/* Company Pages */}
+        <div>
+          <h2 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">My Brands</h2>
+          <div className="flex flex-wrap gap-3">
+            <a href="https://www.facebook.com/stechnova0" className="px-4 py-2 bg-white dark:bg-gray-800 shadow rounded-lg hover:bg-teal-600 hover:text-white transition">STechNova</a>
+            <a href="https://www.facebook.com/kinundotcom" className="px-4 py-2 bg-white dark:bg-gray-800 shadow rounded-lg hover:bg-teal-600 hover:text-white transition">Kinun.com</a>
+            <a href="https://www.facebook.com/BoiDhara" className="px-4 py-2 bg-white dark:bg-gray-800 shadow rounded-lg hover:bg-teal-600 hover:text-white transition">Boidhara</a>
           </div>
         </div>
       </div>
-    </div>
-  )
+    </motion.section>
+  );
 }
