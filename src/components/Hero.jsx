@@ -4,22 +4,22 @@ import { Link } from "react-router-dom";
 
 const slides = [
   {
-    img: "public/assets/slide1.jpg",
+    img: "/assets/slide1.jpg",
     role: "Digital Marketer",
     about: "Crafting data-driven marketing strategies that grow brands and reach audiences.",
   },
   {
-    img: "public/assets/slide2.jpg",
+    img: "/assets/slide2.jpg",
     role: "Content Creator",
     about: "Creating engaging content that tells stories and builds connections.",
   },
   {
-    img: "public/assets/slide3.jpg",
+    img: "/assets/slide3.jpg",
     role: "Writer",
     about: "Writing insightful articles and copy that resonates with readers.",
   },
   {
-    img: "public/assets/slide4.jpg",
+    img: "/assets/slide4.jpg",
     role: "Entrepreneur",
     about: "Building brands, leading teams, and driving innovative projects.",
   },
