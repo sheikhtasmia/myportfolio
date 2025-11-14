@@ -37,7 +37,7 @@ export default function Brands() {
      {
       name: "Gadget Mistri",
       desc: "Your One Stop Gadget Store",
-      logo: "/assets/gadgetmistri.png",
+      logo: "/assets/gadgetmistri.jpg",
       social: {
         fb: "https://www.facebook.com/gadgetmistrri",
         ig: "#",
