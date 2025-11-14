@@ -7,15 +7,15 @@ export default function About() {
       <div className="max-w-6xl mx-auto px-4 py-12">
 
         {/* Page Title */}
-        <motion.h1 
-          initial={{ opacity: 0 }} 
-          animate={{ opacity: 1 }} 
+        <motion.h1
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           className="text-3xl font-bold mb-6"
         >
           About — Sheikh Tasmia
         </motion.h1>
 
-        {/* About Text (Education + Experience together) */}
+        {/* About Text */}
         <section className="card mb-8">
           <p className="text-gray-700">
             Hi, I am Sheikh Tasmia, a digital marketer and content creator focused on growth, storytelling, and measurable outcomes. I lead teams and run multiple ventures in the digital and publishing space. <br /><br />
@@ -23,28 +23,8 @@ export default function About() {
           </p>
         </section>
 
-          {/* Ownership */}
-          <section className="card">
-            <h3 className="font-semibold text-xl mb-2">Ownership</h3>
-            <div>
-              <div className="mb-3">
-                <div className="font-medium">STechNova</div>
-                <div className="text-sm text-gray-600">A digital agency delivering marketing, web and branding services.</div>
-              </div>
-              <div className="mb-3">
-                <div className="font-medium">Kinun.com</div>
-                <div className="text-sm text-gray-600">An e-commerce store with a curated selection of products.</div>
-              </div>
-              <div>
-                <div className="font-medium">Boidhara</div>
-                <div className="text-sm text-gray-600">A bookshop and publisher focusing on local literature and distribution.</div>
-              </div>
-            </div>
-          </section>
-        </div>
-
-        {/* Skill Section — Improved */}
-        <section className="card mt-8">
+        {/* Skills */}
+        <section className="card mb-8">
           <h3 className="font-semibold text-xl mb-4">Skills</h3>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
             {[
@@ -68,8 +48,8 @@ export default function About() {
           </div>
         </section>
 
-        {/* Certificates Section — Bigger Images */}
-        <section className="mt-10">
+        {/* Certificates */}
+        <section className="mb-8">
           <h3 className="text-xl font-semibold mb-4">Certificates</h3>
           <div className="grid md:grid-cols-3 gap-6">
             {[
@@ -89,6 +69,7 @@ export default function About() {
             ))}
           </div>
         </section>
+
       </div>
     </div>
   )
